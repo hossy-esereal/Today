@@ -5,6 +5,7 @@
 //  Created by hossy on 2022/05/10.
 //
 
+import Foundation
 import UIKit
 
 @available(iOS 15.0, *)
@@ -22,11 +23,11 @@ extension ReminderListViewController {
         cell.contentConfiguration = contentConfiguration
         
         var doneButtonConfiguration = doneButtonConfigutation(for: reminder)
-        doneButtonConfiguration.tintColor = .black
+        doneButtonConfiguration.tintColor = .todayListCellDoneButtonTint
         cell.accessories = [ .customView(configuration: doneButtonConfiguration), .disclosureIndicator(displayed: .always) ]
         
         var backgroundConfiguration = UIBackgroundConfiguration.listGroupedCell()
-        backgroundConfiguration.backgroundColor = .black
+        backgroundConfiguration.backgroundColor = .todayListCellBackground
         cell.backgroundConfiguration = backgroundConfiguration
     }
     
@@ -40,7 +41,20 @@ extension ReminderListViewController {
         let symbolName = reminder.isComplete ? "circle.fill" : "circle"
         let symbolConfiguration = UIImage.SymbolConfiguration(textStyle: .title1)
         let image = UIImage(systemName: symbolName, withConfiguration: symbolConfiguration)
-        let button = UIButton()
+        let button = ReminderDoneButton()
+        button.addTarget(self, action: #selector(didPressDoneButton(_:)), for: .touchUpInside)
+        button.id = reminder.id
+        button.setImage(image, for: .normal)
+        return UICellAccessory.CustomViewConfiguration(customView: button, placement: .leading(displayed: .always))
+    }
+    
+    private func doneButtonConfiguration(for reminder: Reminder) -> UICellAccessory.CustomViewConfiguration {
+        let symbolName = reminder.isComplete ? "circle.fill" : "circle"
+        let symbolConfiguration = UIImage.SymbolConfiguration(textStyle: .title1)
+        let image = UIImage(systemName: symbolName, withConfiguration: symbolConfiguration)
+        let button = ReminderDoneButton()
+        button.addTarget(self, action: #selector(didPressDoneButton(_:)), for: .touchUpInside)
+        button.id = reminder.id
         button.setImage(image, for: .normal)
         return UICellAccessory.CustomViewConfiguration(customView: button, placement: .leading(displayed: .always))
     }
@@ -51,7 +65,7 @@ extension ReminderListViewController {
     }
     
     func update(_ reminder: Reminder, with id: Reminder.ID) {
-        let index = reminders.indexOfReminder(with: .id)
+        let index = reminders.indexOfReminder(with: id)
         reminders[index] = reminder
     }
 }

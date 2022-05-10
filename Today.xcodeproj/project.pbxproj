@@ -18,6 +18,7 @@
 		A244507A28290DE0003A0342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A244507828290DE0003A0342 /* LaunchScreen.storyboard */; };
 		A266F35C282A9AC9002B558D /* ReminderDoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F35B282A9AC9002B558D /* ReminderDoneButton.swift */; };
 		A266F35E282A9C9A002B558D /* ReminderListViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F35D282A9C9A002B558D /* ReminderListViewController+Actions.swift */; };
+		A266F360282AA03E002B558D /* UIColot+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F35F282AA03E002B558D /* UIColot+Today.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A244507B28290DE0003A0342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A266F35B282A9AC9002B558D /* ReminderDoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDoneButton.swift; sourceTree = "<group>"; };
 		A266F35D282A9C9A002B558D /* ReminderListViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderListViewController+Actions.swift"; sourceTree = "<group>"; };
+		A266F35F282AA03E002B558D /* UIColot+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColot+Today.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			children = (
 				A2413E78282950D100948AD8 /* Reminder.swift */,
 				A2413E7A2829708800948AD8 /* Date+Today.swift */,
+				A266F35F282AA03E002B558D /* UIColot+Today.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				A266F35E282A9C9A002B558D /* ReminderListViewController+Actions.swift in Sources */,
 				A2413E7E2829757F00948AD8 /* RemindListViewController+DataSource.swift in Sources */,
+				A266F360282AA03E002B558D /* UIColot+Today.swift in Sources */,
 				A244507228290DDF003A0342 /* ReminderListViewController.swift in Sources */,
 				A2413E7B2829708800948AD8 /* Date+Today.swift in Sources */,
 				A244506E28290DDF003A0342 /* AppDelegate.swift in Sources */,
