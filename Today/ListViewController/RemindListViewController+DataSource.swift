@@ -14,7 +14,7 @@ extension ReminderListViewController {
     
     @available(iOS 15.0, *)
     func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, id: Reminder.ID) {
-        let reminder = reminders(for: id)
+        let reminder = reminder(for: id)
         var contentConfiguration = cell.defaultContentConfiguration()
         contentConfiguration.text = reminder.title
         contentConfiguration.secondaryText = reminder.dueDate.dayAndTimeText
@@ -28,6 +28,12 @@ extension ReminderListViewController {
         var backgroundConfiguration = UIBackgroundConfiguration.listGroupedCell()
         backgroundConfiguration.backgroundColor = .black
         cell.backgroundConfiguration = backgroundConfiguration
+    }
+    
+    func completeReminder(with id: Reminder.ID) {
+        var reminder = reminder(for: id)
+        reminder.isComplete.toggle()
+        update(reminder, with: id)
     }
     
     private func doneButtonConfigutation(for reminder: Reminder) -> UICellAccessory.CustomViewConfiguration {
