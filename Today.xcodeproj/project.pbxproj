@@ -23,6 +23,7 @@
 		A266F365282B5491002B558D /* ReminderViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F364282B5491002B558D /* ReminderViewController+Row.swift */; };
 		A266F367282BC370002B558D /* ReminderViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F366282BC370002B558D /* ReminderViewController+Section.swift */; };
 		A266F369282CFDF8002B558D /* ReminderViewController+CellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F368282CFDF8002B558D /* ReminderViewController+CellConfiguration.swift */; };
+		A266F36C282D03B2002B558D /* UIView+PinnedSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F36B282D03B2002B558D /* UIView+PinnedSubview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		A266F364282B5491002B558D /* ReminderViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Row.swift"; sourceTree = "<group>"; };
 		A266F366282BC370002B558D /* ReminderViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Section.swift"; sourceTree = "<group>"; };
 		A266F368282CFDF8002B558D /* ReminderViewController+CellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+CellConfiguration.swift"; sourceTree = "<group>"; };
+		A266F36B282D03B2002B558D /* UIView+PinnedSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PinnedSubview.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		A244506C28290DDF003A0342 /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				A266F36A282D0359002B558D /* ContentViews */,
 				A266F363282B5462002B558D /* DetailViewController */,
 				A2413E772829508B00948AD8 /* Models */,
 				A244506D28290DDF003A0342 /* AppDelegate.swift */,
@@ -119,6 +122,14 @@
 				A266F368282CFDF8002B558D /* ReminderViewController+CellConfiguration.swift */,
 			);
 			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		A266F36A282D0359002B558D /* ContentViews */ = {
+			isa = PBXGroup;
+			children = (
+				A266F36B282D03B2002B558D /* UIView+PinnedSubview.swift */,
+			);
+			path = ContentViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A266F36C282D03B2002B558D /* UIView+PinnedSubview.swift in Sources */,
 				A266F367282BC370002B558D /* ReminderViewController+Section.swift in Sources */,
 				A266F35E282A9C9A002B558D /* ReminderListViewController+Actions.swift in Sources */,
 				A2413E7E2829757F00948AD8 /* RemindListViewController+DataSource.swift in Sources */,
