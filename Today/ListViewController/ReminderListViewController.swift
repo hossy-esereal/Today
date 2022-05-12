@@ -7,7 +7,6 @@
 
 import UIKit
 
-@available(iOS 15.0, *)
 class ReminderListViewController: UICollectionViewController {
     var dataSource: DataSource!
     var reminders: [Reminder] = Reminder.sampleData

@@ -7,7 +7,6 @@
 
 import UIKit
 
-@available(iOS 15.0, *)
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

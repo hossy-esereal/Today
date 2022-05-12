@@ -8,7 +8,6 @@
 import Foundation
 
 extension Date {
-    @available(iOS 15.0, *)
     var dayAndTimeText: String {
         let timeText = formatted(date: .omitted, time: .shortened)
         if Locale.current.calendar.isDateInToday(self) {
@@ -21,7 +20,6 @@ extension Date {
         }
     }
     
-    @available(iOS 15.0, *)
     var dayText: String {
         if Locale.current.calendar.isDateInToday(self) {
             return NSLocalizedString("Today", comment: "Today due date description")
