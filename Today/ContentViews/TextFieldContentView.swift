@@ -47,7 +47,7 @@ class TextFieldContentView: UIView, UIContentView {
     
     @objc private func didChange(_ sender: UITextField) {
         guard let configuration = configuration as? TextFieldContentView.Configuration else { return }
-        configuraion.onChange(textField.text ?? "")
+        configuration.onChange(textField.text ?? "")
     }
 }
 
