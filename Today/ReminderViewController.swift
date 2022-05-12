@@ -12,10 +12,12 @@ class ReminderViewController: UICollectionViewController {
     private typealias SnapShot = NSDiffableDataSourceSnapshot<Section, Row>
     
     var reminder: Reminder
+    var workingReminder: Reminder
     private var dataSource: DataSource!
     
     init(reminder: Reminder) {
         self.reminder = reminder
+        self.workingReminder = reminder
         var listConfiguration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
         listConfiguration.showsSeparators = false
         listConfiguration.headerMode = .firstItemInSection
@@ -44,9 +46,9 @@ class ReminderViewController: UICollectionViewController {
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         if editing {
-            updateSnapshotForEditing()
+            prepareForEditing()
         } else {
-            updateSnapshotForViewing()
+            prepareForViewing()
         }
     }
     
@@ -92,5 +94,16 @@ class ReminderViewController: UICollectionViewController {
             fatalError("Unable to find matching section")
         }
         return section
+    }
+    
+    private func prepareForEditing() {
+        if workingReminder != reminder {
+            reminder = workingReminder
+        }
+        updateSnapshotForEditing()
+    }
+    
+    private func prepareForViewing() {
+        updateSnapshotForViewing()
     }
 }
