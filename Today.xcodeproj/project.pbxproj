@@ -28,6 +28,7 @@
 		A266F370282D0ED2002B558D /* Configuration+Stateless.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F36F282D0ED2002B558D /* Configuration+Stateless.swift */; };
 		A266F372282D24EC002B558D /* TextViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F371282D24EC002B558D /* TextViewContentView.swift */; };
 		A266F374282D4060002B558D /* DatePickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F373282D4060002B558D /* DatePickerContentView.swift */; };
+		A266F376282E8173002B558D /* ReminderListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F375282E8173002B558D /* ReminderListStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		A266F36F282D0ED2002B558D /* Configuration+Stateless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Configuration+Stateless.swift"; sourceTree = "<group>"; };
 		A266F371282D24EC002B558D /* TextViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewContentView.swift; sourceTree = "<group>"; };
 		A266F373282D4060002B558D /* DatePickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerContentView.swift; sourceTree = "<group>"; };
+		A266F375282E8173002B558D /* ReminderListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				A2413E78282950D100948AD8 /* Reminder.swift */,
 				A2413E7A2829708800948AD8 /* Date+Today.swift */,
 				A266F35F282AA03E002B558D /* UIColot+Today.swift */,
+				A266F375282E8173002B558D /* ReminderListStyle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				A266F35E282A9C9A002B558D /* ReminderListViewController+Actions.swift in Sources */,
 				A266F370282D0ED2002B558D /* Configuration+Stateless.swift in Sources */,
 				A2413E7E2829757F00948AD8 /* RemindListViewController+DataSource.swift in Sources */,
+				A266F376282E8173002B558D /* ReminderListStyle.swift in Sources */,
 				A266F362282B52E3002B558D /* ReminderViewController.swift in Sources */,
 				A266F360282AA03E002B558D /* UIColot+Today.swift in Sources */,
 				A244507228290DDF003A0342 /* ReminderListViewController.swift in Sources */,
