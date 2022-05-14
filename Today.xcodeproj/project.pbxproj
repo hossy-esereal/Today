@@ -30,6 +30,7 @@
 		A266F374282D4060002B558D /* DatePickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F373282D4060002B558D /* DatePickerContentView.swift */; };
 		A266F376282E8173002B558D /* ReminderListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F375282E8173002B558D /* ReminderListStyle.swift */; };
 		A266F378282F412E002B558D /* ProgressHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F377282F412E002B558D /* ProgressHeaderView.swift */; };
+		A266F37A282F5A48002B558D /* CAGradientLayer+ListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F379282F5A48002B558D /* CAGradientLayer+ListStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		A266F373282D4060002B558D /* DatePickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerContentView.swift; sourceTree = "<group>"; };
 		A266F375282E8173002B558D /* ReminderListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListStyle.swift; sourceTree = "<group>"; };
 		A266F377282F412E002B558D /* ProgressHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHeaderView.swift; sourceTree = "<group>"; };
+		A266F379282F5A48002B558D /* CAGradientLayer+ListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+ListStyle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				A2413E7A2829708800948AD8 /* Date+Today.swift */,
 				A266F35F282AA03E002B558D /* UIColot+Today.swift */,
 				A266F375282E8173002B558D /* ReminderListStyle.swift */,
+				A266F379282F5A48002B558D /* CAGradientLayer+ListStyle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				A244507028290DDF003A0342 /* SceneDelegate.swift in Sources */,
 				A266F378282F412E002B558D /* ProgressHeaderView.swift in Sources */,
 				A266F35C282A9AC9002B558D /* ReminderDoneButton.swift in Sources */,
+				A266F37A282F5A48002B558D /* CAGradientLayer+ListStyle.swift in Sources */,
 				A2413E79282950D100948AD8 /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
