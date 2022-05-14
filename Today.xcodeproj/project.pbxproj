@@ -33,6 +33,7 @@
 		A266F37A282F5A48002B558D /* CAGradientLayer+ListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266F379282F5A48002B558D /* CAGradientLayer+ListStyle.swift */; };
 		A294CB7628301D52007C16E3 /* TodayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294CB7528301D52007C16E3 /* TodayError.swift */; };
 		A294CB7828301E06007C16E3 /* EKEventStore+AsyncFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294CB7728301E06007C16E3 /* EKEventStore+AsyncFetch.swift */; };
+		A294CB7A283020B9007C16E3 /* Reminder+EKReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294CB79283020B9007C16E3 /* Reminder+EKReminder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		A266F379282F5A48002B558D /* CAGradientLayer+ListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+ListStyle.swift"; sourceTree = "<group>"; };
 		A294CB7528301D52007C16E3 /* TodayError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayError.swift; sourceTree = "<group>"; };
 		A294CB7728301E06007C16E3 /* EKEventStore+AsyncFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKEventStore+AsyncFetch.swift"; sourceTree = "<group>"; };
+		A294CB79283020B9007C16E3 /* Reminder+EKReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+EKReminder.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				A266F379282F5A48002B558D /* CAGradientLayer+ListStyle.swift */,
 				A294CB7528301D52007C16E3 /* TodayError.swift */,
 				A294CB7728301E06007C16E3 /* EKEventStore+AsyncFetch.swift */,
+				A294CB79283020B9007C16E3 /* Reminder+EKReminder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				A266F369282CFDF8002B558D /* ReminderViewController+CellConfiguration.swift in Sources */,
 				A244507028290DDF003A0342 /* SceneDelegate.swift in Sources */,
 				A266F378282F412E002B558D /* ProgressHeaderView.swift in Sources */,
+				A294CB7A283020B9007C16E3 /* Reminder+EKReminder.swift in Sources */,
 				A294CB7828301E06007C16E3 /* EKEventStore+AsyncFetch.swift in Sources */,
 				A266F35C282A9AC9002B558D /* ReminderDoneButton.swift in Sources */,
 				A266F37A282F5A48002B558D /* CAGradientLayer+ListStyle.swift in Sources */,
